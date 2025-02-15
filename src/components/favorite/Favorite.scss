@@ -1,0 +1,45 @@
+.favorite{
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px;
+
+    .favorite-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+
+        .favorite-item{
+            border: 1px solid #F3F3F3;
+            border-radius: 15px;
+            width: fit-content;
+            position: relative;
+            padding: 25px;
+            text-align: center;
+            font-size: 17px;
+            transition: all .3s;
+            height: fit-content;
+        }
+
+        .favorite-item:hover{
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+            transition: all .3s;
+        }
+    }
+
+    .not-favorite{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+

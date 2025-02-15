@@ -1,0 +1,53 @@
+.picture{
+
+    width: fit-content;
+    
+
+    img{
+        width: 135px;
+        height: 125px;
+    }
+
+    p{
+        width: 150px;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: start;
+    }
+
+    .picture-like{
+        position: absolute;
+        left: 20px;
+    }
+
+    .picture-icon{
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    .picture-info{
+        margin-top: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .picture-info-price{
+            text-align: start;
+
+            p{
+                color: #BDBDBD;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            span{
+                font-weight: 700;
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+
