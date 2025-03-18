@@ -2,12 +2,10 @@ import React from 'react'
 import './Header.scss'
 import {Link} from 'react-router-dom'
 
-import { AllContext } from '../../App'
 import { useCart } from '../../hooks/useCart'
 
 export const Header = ({onClickOpen, onClickOpenFavorite}) => {
 
-    const {setCartOpen, cart} = React.useContext(AllContext)
     const {totalPrice} = useCart()
 
     return (

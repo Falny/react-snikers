@@ -1,73 +1,138 @@
-.snikers{
-    margin-bottom: 30px;
-    
+.snikers {
+  margin-bottom: 30px;
 
-    .snikers-head{
-        display: flex;
-        justify-content: space-between;  
-        	
+  .snikers-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        .snikers-search{
-            position: relative;
+    h1 {
+      font-size: 28px;
 
-            .search-icon{
-                position: absolute;
-                color: #C4C4C4;
-            }
+      @media (max-width: 800px) {
+        font-size: 23px;
+      }
 
-            .search{
-                top: 50%;
-                left: 14px;
-                transform: translateY(-50%);
-            }
+      @media (max-width: 435px) {
+        font-size: 20px;
+      }
 
-            .close{
-                top: 50%;
-                right: 14px;
-                transform: translateY(-50%);
-                cursor: pointer;
-            }
-
-            input{
-                width: 250px;
-                height: 45px;
-                border: 1px solid #F3F3F3;
-                border-radius: 10px;
-                padding-left: 45px;
-                color: #C4C4C4;
-                font-size: 14px;
-                line-height: 17px;
-                outline: none;
-            }
-
-            input::placeholder{
-                color: #C4C4C4;
-                font-size: 14px;
-            }
-        }
+      @media (max-width: 320px) {
+        font-size: 15px;
+      }
     }
+
+    .snikers-search {
+      position: relative;
+
+      .search-icon {
+        color: #c4c4c4;
+      }
+
+      .search {
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        transform: translateY(-50%);
+
+        @media (max-width: 800px) {
+          scale: 0.8;
+          top: 40%;
+        }
+
+        @media (max-width: 320px) {
+          scale: 0.7;
+          top: 35%;
+          left: 7px;
+        }
+      }
+
+      .close {
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        @media (max-width: 800px) {
+          scale: 0.8;
+          top: 40%;
+        }
+
+        @media (max-width: 320px) {
+          scale: 0.7;
+          top: 35%;
+          right: 5px;
+        }
+      }
+
+      input {
+        width: 250px;
+        height: fit-content;
+        border: 1px solid #f3f3f3;
+        border-radius: 10px;
+        padding: 10px 0 10px 45px ;
+        color: #c4c4c4;
+        font-size: 14px;
+        line-height: 17px;
+        outline: none;
+
+        @media (max-width: 800px) {
+          width: 175px;
+          padding-left: 40px;
+        }
+
+        @media (max-width: 435px) {
+          width: 115px;
+          padding-left: 38px;
+        }
+
+        @media (max-width: 320px) {
+          width: 115px;
+          font-size: 12px;
+          padding-left: 30px;
+        }
+      }
+
+      input::placeholder {
+        color: #c4c4c4;
+        font-size: 14px;
+
+        @media (max-width: 320px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
 
-.picture-list{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap; 
+.picture-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 
-    .picture-item{
-        border: 1px solid #F3F3F3;
-        border-radius: 15px;
-        width: fit-content;
-        position: relative;
-        padding: 25px;
-        text-align: center;
-        font-size: 17px;
-        transition: all .3s;
+  .picture-item {
+    border: 1px solid #f3f3f3;
+    border-radius: 15px;
+    width: fit-content;
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    font-size: 17px;
+    transition: all 0.3s;
+
+    @media (max-width: 800px) {
+      padding: 15px;
     }
 
-    .picture-item:hover{
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        transform: translateY(-5px);
-        transition: all .3s;
+    @media (max-width: 320px) {
+      padding: 11px;
     }
+  }
 
+  .picture-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s;
+  }
 }

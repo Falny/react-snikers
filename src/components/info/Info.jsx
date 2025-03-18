@@ -1,8 +1,6 @@
 import React from 'react'
 import './Info.scss'
 
-import { AllContext } from '../../App'
-
 export const Info = ({title, img, description, onClickClose}) => {
 
   return (

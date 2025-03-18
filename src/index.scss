@@ -1,68 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-
-body{
-    margin: 0;
-    font-family: 'Inter', monospace;
-    background-color: #ebfbff;
-    overflow-x: hidden;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  font-family: "Inter", monospace;
+  background-color: #ebfbff;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, p{
-    margin: 0;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-.wrapper{
-    background: #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 20px;
-    max-width: 1200px;
-    margin: 50px auto;
+.wrapper {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
 }
 
-.container{
-    padding: 40px 60px;
+.container {
+  padding: 40px 60px;
+
+  @media (max-width: 435px) {
+    padding: 30px 20px;
+  }
 }
 
+.btn-close {
+  padding: 17px;
+  border: none;
+  border-radius: 15px;
+  background-color: #9dd458;
+  color: #fff;
+  font-weight: 600;
+  line-height: 19px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 
-.btn-close{
-    padding: 17px;
-    border: none;
-    border-radius: 15px;
-    background-color: #9DD458;
-    color: #fff;
-    font-weight: 600;
-    line-height: 19px;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+  @media (max-width: 800px) {
+    font-size: 13px;
+  }
 
+  @media (max-width: 435px) {
+    padding: 13px;
+  }
 
-    .cart-arrow-back{
-        transform: translateX(0);
-        transition: all .3s;
+  .cart-arrow-back {
+    transform: translateX(0);
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: darken(#9dd458, 5%);
+
+    .cart-arrow-back {
+      transform: translateX(-5px);
     }
-
-    &:hover{
-        background-color: darken(#9DD458, 5%);
-
-        .cart-arrow-back{
-            transform: translateX(-5px);
-        }
-    }
+  }
 }

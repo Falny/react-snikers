@@ -22,7 +22,7 @@ export const Cart = ({opened, onClickClose}) => {
         document.body.style.overflowY = 'hidden'
         } else {
             document.body.style.paddingRight = '0'
-        document.body.style.overflowY = 'scroll'
+            document.body.style.overflowY = 'scroll'
         }
     }, [cartOpen])
 
