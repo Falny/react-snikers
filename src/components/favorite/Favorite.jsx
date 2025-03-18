@@ -7,7 +7,7 @@ import { AllContext } from "../../App";
 
 export const Favorite = () => {
 
-    const {favorite, onAddFavorite} = React.useContext(AllContext)
+    const {favorite} = React.useContext(AllContext)
 
     return (
         <>

@@ -11,7 +11,7 @@ export const Info = ({title, img, description, onClickClose}) => {
                 <h3>{title}</h3>
                 <p>{description}</p>
             </div>
-            <button className='btn-close' type='button' onClick={onClickClose}><img src='images/cart/arrow.svg' className='cart-arrow-back'/> Вернуться назад</button>
+            <button className='btn-close' type='button' onClick={onClickClose}><img src='images/cart/arrow.svg' className='cart-arrow-back' alt='arrow'/> Вернуться назад</button>
         </div>
     </>
   )
