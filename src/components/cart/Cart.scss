@@ -15,7 +15,7 @@
     position: absolute;
     right: 0;
     width: 30%;
-    height: 90vh;
+    height: 100vh;
     background-color: #fff;
     padding: 30px;
     display: flex;
@@ -146,6 +146,7 @@
     .cart-footer {
       display: flex;
       flex-direction: column;
+      margin-bottom: 50px;
 
       .cart-footer-common {
         display: flex;
