@@ -146,7 +146,11 @@
     .cart-footer {
       display: flex;
       flex-direction: column;
-      margin-bottom: 50px;
+
+      @media (max-width: 560px) {
+        margin-bottom: 80px;
+      }
+      
 
       .cart-footer-common {
         display: flex;
