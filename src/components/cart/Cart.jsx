@@ -18,11 +18,9 @@ export const Cart = ({opened, onClickClose}) => {
 
     React.useEffect(() => {
         if (cartOpen) {
-        // document.body.style.paddingRight = '18px'
-        document.body.style.overflowY = 'hidden'
+        document.body.style.overflow = 'hidden'
         } else {
-            // document.body.style.paddingRight = '0'
-            document.body.style.overflowY = 'scroll'
+            document.body.style.overflow = 'scroll'
         }
     }, [cartOpen])
 
